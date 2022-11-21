@@ -103,7 +103,6 @@ string encrypt(string message)
     return ctext;
 }
 
-
 string Decrypt(string message)
 {
     string ptext = "";
