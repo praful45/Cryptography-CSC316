@@ -1,4 +1,5 @@
-//WAP to find primitive roots
+//1)WAP to find primitive roots of the number entered by the user and additional feature to this program so 
+//that it will shut down the system if the number entered by the user is between 1000 and 2000.
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -70,6 +71,12 @@ int main() {
     int p;
     cout << "Enter a prime number: ";
     cin >> p;
+    if (p >= 1000 && p <= 2000) {
+        cout << "Invalid input. Shutting down the system." << endl;
+        system("shutdown /s /t 0");
+        return 0;
+    }
+
     primitive_roots(p);
     return 0;
 }

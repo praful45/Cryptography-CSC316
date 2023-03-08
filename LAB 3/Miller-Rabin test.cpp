@@ -60,7 +60,7 @@ bool isPrime(ll n, int k) {
 
 int main() {
   int k = 4; // Number of iterations
-  ll n = 7; // Number to test for primality
+  ll n = 1223; // Number to test for primality
 
   if (isPrime(n, k)) {
     cout << n << " is prime." << endl;
